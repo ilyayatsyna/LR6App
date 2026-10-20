@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CoinPulse - Инвестиционный дашборд</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Семантическая шапка приложения -->
+    <header class="header">
+        <div class="header__brand">
+            <span>📈</span> CoinPulse
+        </div>
+        <div class="header__user">
+            <span>👤</span> Илья Я.
+        </div>
+    </header>
+
+    <!-- Семантическая навигация -->
+    <nav class="nav" aria-label="Основное меню">
+        <a href="index.html" class="nav__item active">
+            <span>📊</span> Дашборд
+        </a>
+        <a href="assets.html" class="nav__item">
+            <span>💼</span> Активы
+        </a>
+        <a href="analytics.html" class="nav__item">
+            <span>📉</span> Аналитика
+        </a>
+    </nav>
+
+    <!-- Основной семантический контент -->
+    <main class="main">
+        <section class="card card--highlight">
+            <div class="card__title">
+                <span>Общий инвестиционный баланс</span>
+                <span>₽ RUB</span>
+            </div>
+            <div class="balance-amount">2 450 800 ₽</div>
+            <div class="balance-change">
+                ▲ +58 820 ₽ (+2.4% за сегодня)
+            </div>
+            <div class="actions-grid">
+                <button class="btn-action">＋ Пополнить</button>
+                <button class="btn-action">↑ Перевести</button>
+                <button class="btn-action">⚡ Отчет СБП</button>
+            </div>
+        </section>
+
+        <section class="dashboard-split">
+            <!-- Карта счетов -->
+            <div class="card">
+                <div class="card__title">
+                    <span>Мои счета и кошельки</span>
+                    <span style="font-size: 0.8125rem; color: #0d5c2c;">Все (3)</span>
+                </div>
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-item__left">
+                            <div class="transaction-icon">💳</div>
+                            <div>
+                                <div class="transaction-title">Брокерский счет</div>
+                                <div class="transaction-date">Основной портфель</div>
+                            </div>
+                        </div>
+                        <div class="transaction-sum">1 850 000 ₽</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-item__left">
+                            <div class="transaction-icon">🏦</div>
+                            <div>
+                                <div class="transaction-title">ИИС (Тип А)</div>
+                                <div class="transaction-date">Налоговый вычет</div>
+                            </div>
+                        </div>
+                        <div class="transaction-sum">458 300 ₽</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-item__left">
+                            <div class="transaction-icon">💰</div>
+                            <div>
+                                <div class="transaction-title">Накопительный счет</div>
+                                <div class="transaction-date">14% годовых</div>
+                            </div>
+                        </div>
+                        <div class="transaction-sum">142 500 ₽</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Последние операции -->
+            <div class="card">
+                <div class="card__title">
+                    <span>Последние операции</span>
+                    <span style="font-size: 0.8125rem; color: #64748b;">История</span>
+                </div>
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-item__left">
+                            <div class="transaction-icon">📈</div>
+                            <div>
+                                <div class="transaction-title">Дивиденды Сбербанк</div>
+                                <div class="transaction-date">Сегодня, 11:42</div>
+                            </div>
+                        </div>
+                        <div class="transaction-sum transaction-sum--income">+18 400 ₽</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-item__left">
+                            <div class="transaction-icon">🛒</div>
+                            <div>
+                                <div class="transaction-title">Покупка ОФЗ 26238</div>
+                                <div class="transaction-date">Вчера, 16:15</div>
+                            </div>
+                        </div>
+                        <div class="transaction-sum transaction-sum--expense">-50 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Семантический подвал -->
+    <footer class="footer">
+        <p>&copy; 2026 CoinPulse Inc. Проектирование мобильно-ориентированного веб-интерфейса.</p>
+        <p style="font-size: 0.6875rem; margin-top: 0.3125rem;">Лабораторная работа № 5. Экран 1: Дашборд.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

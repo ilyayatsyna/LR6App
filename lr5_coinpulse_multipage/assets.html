@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CoinPulse - Инвестиционные активы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Семантическая шапка приложения -->
+    <header class="header">
+        <div class="header__brand">
+            <span>📈</span> CoinPulse
+        </div>
+        <div class="header__user">
+            <span>👤</span> Илья Я.
+        </div>
+    </header>
+
+    <!-- Семантическая навигация -->
+    <nav class="nav" aria-label="Основное меню">
+        <a href="index.html" class="nav__item">
+            <span>📊</span> Дашборд
+        </a>
+        <a href="assets.html" class="nav__item active">
+            <span>💼</span> Активы
+        </a>
+        <a href="analytics.html" class="nav__item">
+            <span>📉</span> Аналитика
+        </a>
+    </nav>
+
+    <!-- Основной семантический контент -->
+    <main class="main">
+        <section class="card">
+            <div class="card__title">
+                <span>Инвестиционные инструменты</span>
+                <span style="font-size: 0.8125rem; color: #15803d;">Котировки онлайн</span>
+            </div>
+            <p style="font-size: 0.875rem; color: #64748b;">
+                Формируйте сбалансированный инвестиционный портфель: выбирайте акции лидеров рынка, фонды и государственные облигации.
+            </p>
+        </section>
+
+        <section class="assets-grid">
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">🏦</div>
+                    <div class="asset-card__text">
+                        <h4>Сбербанк (SBER)</h4>
+                        <p>Акции • Финсектор</p>
+                        <span class="asset-card__yield">Дивиденды: ~12.5%</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="Сбербанк (SBER)">305.40 ₽</button>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">🏛️</div>
+                    <div class="asset-card__text">
+                        <h4>ОФЗ 26238</h4>
+                        <p>Облигации Минфина</p>
+                        <span class="asset-card__yield">Купон: 14.2%</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="ОФЗ 26238">1 000 ₽</button>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">🥇</div>
+                    <div class="asset-card__text">
+                        <h4>Золото (GLDRUB)</h4>
+                        <p>Защитный металл</p>
+                        <span class="asset-card__yield">Рост: +18.4% / год</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="Золото (GLDRUB)">7 820 ₽</button>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">🚀</div>
+                    <div class="asset-card__text">
+                        <h4>Индекс Мосбиржи (IMOEX)</h4>
+                        <p>ETF • Топ-40 компаний</p>
+                        <span class="asset-card__yield">Доходность: +15.1%</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="Индекс IMOEX">5 200 ₽</button>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">⚡</div>
+                    <div class="asset-card__text">
+                        <h4>Лукойл (LKOH)</h4>
+                        <p>Нефть и газ • Голубая фишка</p>
+                        <span class="asset-card__yield">Дивиденды: ~14.8%</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="Лукойл (LKOH)">7 450 ₽</button>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-card__info">
+                    <div class="transaction-icon">💻</div>
+                    <div class="asset-card__text">
+                        <h4>Яндекс (YDEX)</h4>
+                        <p>IT-сектор • Высокий рост</p>
+                        <span class="asset-card__yield">Рост: +24.3% / год</span>
+                    </div>
+                </div>
+                <button class="btn-primary btn-buy-asset" data-name="Яндекс (YDEX)">4 120 ₽</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Семантический подвал -->
+    <footer class="footer">
+        <p>&copy; 2026 CoinPulse Inc. Проектирование мобильно-ориентированного веб-интерфейса.</p>
+        <p style="font-size: 0.6875rem; margin-top: 0.3125rem;">Лабораторная работа № 5. Экран 2: Активы.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
